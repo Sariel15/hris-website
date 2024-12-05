@@ -1,5 +1,5 @@
 <template>
-  <div class="font-Montserrat text-dire-wolf">
+  <div class="font-['Montserrat',sans-serif]">
     <NavigationBar />
     <NuxtPage />
   </div>

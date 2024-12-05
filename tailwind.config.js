@@ -7,9 +7,14 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        tryButton: '#00B8D4',
+      },
+    },
   },
   plugins: [],
 }
