@@ -4,9 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
+        "blue-green": '#00B8D4',
         "dodgeroll-gold": "#F79F1A",
         "apple-green": "#046E1B",
         "dire-wolf": "#292727",
+        "purple-lightC": "#844DDC20",
       },
     },
     fontFamily: {
@@ -16,5 +18,15 @@ export default {
       center: true,
       padding: "2rem",
     },
+    width: {
+      '128': '32rem',
+      '144': '36rem',
+      '160': '40rem',
+    },
+    height: {
+      '128': '32rem',
+      '144': '36rem',
+      '160': '40rem',
+    }
   },
 };

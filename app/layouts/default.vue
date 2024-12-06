@@ -1,12 +1,10 @@
 <template>
     <div>
-      <BaseNavigation />
-      <slot />
+        <NavigationBar />
+        <slot />
     </div>
-  </template>
-  
-  <script>
-  export default {
-  
-  }
-  </script>
+</template>
+
+<script setup lang="ts">
+
+</script>

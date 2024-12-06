@@ -1,24 +1,24 @@
 <script>
-export default {
-  data() {
-    return {
-      form: {
-        fullName: '',
-        email: '',
-        phone:'',
-        company: '',
-        employees: '',
-        help: ''
+  export default {
+    data() {
+      return {
+        form: {
+          fullName: '',
+          email: '',
+          phone:'',
+          company: '',
+          employees: '',
+          help: ''
+        }
+      };
+    },
+    methods: {
+      handleSubmit() {
+        // Handle form submission logic here
+        console.log(this.form);
       }
-    };
-  },
-  methods: {
-    handleSubmit() {
-      // Handle form submission logic here
-      console.log(this.form);
     }
-  }
-};
+  };
 </script>
 
 <template>
