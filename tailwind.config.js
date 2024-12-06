@@ -9,11 +9,15 @@ export default {
         "apple-green": "#046E1B",
         "dire-wolf": "#292727",
         "purple-lightC": "#844DDC20",
+        "purple-ITS": "#844DDC",
+        "blue-ITS": "#195CAC",
+        "yellow-ITS": "#D3A314",
+        "cyan-ITS": "#00B8D4",
       },
     },
-    fontFamily: {
-      Montserrat: "Montserrat, sans-serif",
-    },
+     fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     container: {
       center: true,
       padding: "2rem",

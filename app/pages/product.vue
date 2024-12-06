@@ -94,6 +94,8 @@
             </div>
         </div>
     </div>
+
+    <ContactFooter />
 </template>
 
 <style scoped>

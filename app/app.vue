@@ -1,7 +1,11 @@
 <template>
-  <div class="font-montserrat text-dire-wolf">
-    <NuxtLayout>
-      <NuxtPage /> 
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<script setup>
+  definePageMeta({
+    layout: 'default'
+  })
+</script>

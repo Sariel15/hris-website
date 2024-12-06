@@ -1,7 +1,8 @@
 <template>
-    <div>
+    <div class="font-montserrat text-dire-wolf">
         <NavigationBar />
         <slot />
+        <FooterBar />
     </div>
 </template>
 
