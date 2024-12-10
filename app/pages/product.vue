@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1 class="mt-10 text-center text-5xl font-semibold">Discover, Create, Build</h1>
-        <p class="mt-2 text-center text-xl">
+        <h1 class="mt-10 text-center text-3xl sm:text-4xl md:text-5xl font-semibold">Discover, Create, Build</h1>
+        <p class="mt-2 text-center text-lg sm:text-xl">
             Check out our HRIS System!
         </p>
         <button class="
@@ -11,10 +11,12 @@
             border-2
             border-blue-green 
             text-black 
-            px-6 py-2 
+            px-4 sm:px-6 
+            py-1.5 sm:py-2 
             rounded-3xl 
             hover:bg-blue-green 
             hover:text-white
+            text-sm sm:text-base
             tracking-[.15em]">
             TRY OUR PRODUCT
         </button>
@@ -28,29 +30,29 @@
             class="w-full h-auto max-w-screen-md mx-auto"/>
     </div>
 
-    <div class="carousel-container bg-purple-lightC h-auto py-16 overflow-hidden">
+    <div class="carousel-container bg-purple-lightC h-auto py-8 sm:py-16 overflow-hidden">
         <div class="carousel-track">
             <div
                 v-for="(feature, index) in [...features, ...features]"
                 :key="index"
-                class="carousel-card bg-white shadow-lg rounded-3xl p-8 mx-4 flex flex-col"
+                class="carousel-card bg-white shadow-lg rounded-3xl p-4 sm:p-8 mx-2 sm:mx-4 flex flex-col"
             >
-                <h2 class="text-2xl font-bold mb-2">{{ feature.title }}</h2>
-                <p class="text-gray-600">{{ feature.description }}</p>
-                <div class="mt-auto border-2 p-4 w-32 h-32 flex items-center justify-center">
+                <h2 class="text-xl sm:text-2xl font-bold mb-2">{{ feature.title }}</h2>
+                <p class="text-gray-600 text-sm sm:text-base">{{ feature.description }}</p>
+                <div class="mt-auto border-2 p-2 sm:p-4 w-24 sm:w-32 h-24 sm:h-32 flex items-center justify-center">
                     <NuxtImg :src="feature.image" :alt="feature.title + ' Image'" format="webp"/>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="how-hris-works bg-white py-16 px-8">
-        <h2 class="text-center text-6xl font-bold mb-20">How HRIS works</h2>
+    <div class="how-hris-works bg-white py-8 sm:py-16 px-4 sm:px-8">
+        <h2 class="text-center text-4xl sm:text-5xl md:text-6xl font-bold mb-10 sm:mb-20">How HRIS works</h2>
         
         <div class="max-w-screen-xl mx-auto">
             <div class="flex flex-col justify-center md:flex-row gap-28 mb-16">
                 <div class="w-full md:w-1/2">
-                    <div class="bg-white rounded-3xl shadow-lg p-8 flex items-center justify-center h-[250px] w-[350px]">
+                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[200px] sm:h-[250px] w-full sm:w-[350px] mx-auto">
                         Short Video Demo
                     </div>
                 </div>
@@ -65,7 +67,7 @@
 
             <div class="flex flex-col justify-center md:flex-row-reverse gap-28 mb-16">
                 <div class="w-full md:w-1/2">
-                    <div class="bg-white rounded-3xl shadow-lg p-8 flex items-center justify-center h-[250px] w-[350px]">
+                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[200px] sm:h-[250px] w-full sm:w-[350px] mx-auto">
                         Short Video Demo
                     </div>
                 </div>
@@ -80,7 +82,7 @@
 
             <div class="flex flex-col justify-center md:flex-row gap-28 mb-16">
                 <div class="w-full md:w-1/2">
-                    <div class="bg-white rounded-3xl shadow-lg p-8 flex items-center justify-center h-[250px] w-[350px]">
+                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[200px] sm:h-[250px] w-full sm:w-[350px] mx-auto">
                         Short Video Demo
                     </div>
                 </div>
@@ -94,13 +96,16 @@
             </div>
         </div>
     </div>
-
     <ContactFooter />
 </template>
 
 <style scoped>
 .carousel-container {
-    height: 600px;
+    height: auto;
+    min-height: 500px;
+    @media (min-width: 640px) {
+        height: 600px;
+    }
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -119,8 +124,12 @@
 }
 
 .carousel-card {
-    min-width: 320px;
-    min-height: 380px;
+    min-width: 260px;
+    min-height: 320px;
+    @media (min-width: 640px) {
+        min-width: 320px;
+        min-height: 380px;
+    }
     flex-shrink: 0;
 }
 
