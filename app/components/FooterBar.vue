@@ -14,7 +14,7 @@
             We provide world class services at a fraction of a cost without sacrificing quality.
           </p>
           <div class="flex justify-center md:justify-start space-x-4">
-            <a v-for="social in ['envelope', 'facebook-f', 'twitter', 'linkedin-in']" 
+            <a v-for="social in ['envelope', 'facebook', 'twitter', 'linkedin']" 
                :key="social"
                href="#" 
                class="bg-yellow-500 p-3 md:p-4 rounded-full hover:bg-yellow-600 transition-all hover:scale-105">
@@ -68,7 +68,7 @@ export default {
   setup() {
     const contacts = [
       { 
-        icon: 'far fa-envelope',
+        icon: 'fab fa-envelope',
         text: 'customercare@itsquarehub.com',
         href: 'mailto:customercare@itsquarehub.com'
       },

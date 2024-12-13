@@ -120,7 +120,7 @@ onMounted(() => {
     if (!cardContainer.value || !cardRefs.value) return;
     
     const containerRect = cardContainer.value.getBoundingClientRect();
-    const triggerPoint = window.innerHeight * 1.2;
+    const triggerPoint = window.innerHeight * 1.4;
     
     const scrollProgress = containerRect.top < triggerPoint 
       ? Math.min(Math.max((triggerPoint - containerRect.top) / (triggerPoint * 0.5), 0), 1)

@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <h1 class="mt-10 text-center text-3xl sm:text-4xl md:text-5xl font-semibold">Discover, Create, Build</h1>
-        <p class="mt-2 text-center text-lg sm:text-xl">
+     <div class="px-4 sm:px-6 lg:px-8"> <!-- Added padding container -->
+        <h1 class="mt-10 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
+            Discover, Create, Build
+        </h1>
+        <p class="mt-2 text-center text-base sm:text-lg md:text-xl">
             Check out our HRIS System!
         </p>
         <button class="
             font-semibold
             mt-5 
-            mx-auto block 
-            border-2
+            mx-auto block z
+            border-2    
             border-blue-green 
             text-black 
             px-4 sm:px-6 
@@ -46,51 +48,53 @@
         </div>
     </div>
 
-    <div class="how-hris-works bg-white py-8 sm:py-16 px-4 sm:px-8">
-        <h2 class="text-center text-4xl sm:text-5xl md:text-6xl font-bold mb-10 sm:mb-20">How HRIS works</h2>
+    <div class="how-hris-works bg-white py-6 sm:py-8 md:py-10 lg:py-16 px-4 md:px-6 lg:px-8">
+        <h2 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+            How HRIS works
+        </h2>
         
         <div class="max-w-screen-xl mx-auto">
-            <div class="flex flex-col justify-center md:flex-row gap-28 mb-16">
+            <div class="flex flex-col justify-center lg:flex-row gap-28 mb-16">
                 <div class="w-full md:w-1/2">
-                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[200px] sm:h-[250px] w-full sm:w-[350px] mx-auto">
+                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[400px] sm:h-[500px] w-full sm:w-[600px] mx-auto">
                         Short Video Demo
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col justify-center">
-                    <h3 class="text-3xl font-semibold mb-4">Easy to Login</h3>
+                    <h3 class="text-3xl font-semibold mb-4 md:text-left text-center">Easy to Login</h3>
                     <div class="relative">
-                        <div class="h-0.5 w-[120%] bg-gray-300 mb-4 border-t border-black shadow-lg"></div>
-                        <p class="text-gray-600">DESCRIPTION</p>
+                        <div class="h-0.5 w-[100%] bg-gray-300 mb-4 border-t border-black shadow-lg"></div>
+                        <p class="text-gray-600 md:text-left text-center">DESCRIPTION</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col justify-center md:flex-row-reverse gap-28 mb-16">
+            <div class="flex flex-col justify-center lg:flex-row-reverse gap-28 mb-16">
                 <div class="w-full md:w-1/2">
-                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[200px] sm:h-[250px] w-full sm:w-[350px] mx-auto">
+                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[400px] sm:h-[500px] w-full sm:w-[600px] mx-auto">
                         Short Video Demo
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col justify-center">
-                    <h3 class="text-3xl text-right font-semibold mb-4">Functions</h3>
+                    <h3 class="text-3xl font-semibold mb-4 md:text-right text-center">Functions</h3>
                     <div class="relative">
-                        <div class="h-0.5 w-[140%] bg-gray-300 mb-4 border-t border-black shadow-lg -ml-[40%]"></div>
-                        <p class="text-gray-600 text-right">DESCRIPTION</p>
+                        <div class="h-0.5 w-[100%] bg-gray-300 mb-4 border-t border-black shadow-lg ml-auto"></div>
+                        <p class="text-gray-600 md:text-right text-center">DESCRIPTION</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col justify-center md:flex-row gap-28 mb-16">
+            <div class="flex flex-col justify-center lg:flex-row gap-28 mb-16">
                 <div class="w-full md:w-1/2">
-                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[200px] sm:h-[250px] w-full sm:w-[350px] mx-auto">
+                    <div class="bg-white rounded-3xl shadow-lg p-4 sm:p-8 flex items-center justify-center h-[400px] sm:h-[500px] w-full sm:w-[600px] mx-auto">
                         Short Video Demo
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col justify-center">
-                    <h3 class="text-3xl font-semibold mb-4">Sample Output</h3>
+                    <h3 class="text-3xl font-semibold mb-4 md:text-left text-center">Sample Output</h3>
                     <div class="relative">
-                        <div class="h-0.5 w-[120%] bg-gray-300 mb-4 border-t border-black shadow-lg"></div>
-                        <p class="text-gray-600">DESCRIPTION</p>
+                        <div class="h-0.5 w-[100%] bg-gray-300 mb-4 border-t border-black shadow-lg"></div>
+                        <p class="text-gray-600 md:text-left text-center">DESCRIPTION</p>
                     </div>
                 </div>
             </div>
@@ -102,35 +106,68 @@
 <style scoped>
 .carousel-container {
     height: auto;
-    min-height: 500px;
-    @media (min-width: 640px) {
-        height: 600px;
-    }
+    min-height: 300px;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     background-color: #f4edff;
-    clip-path: polygon(0 10%, 100% 0, 100% 85%, 0 100%);
-    padding: 4rem 0;
+    padding: 1rem 0;
+    
+    @media (max-width: 425px) {
+        clip-path: none;
+        padding: 2rem 0;
+    }
+
+    @media (min-width: 426px) {
+        min-height: 600px;
+        overflow: hidden;
+        clip-path: polygon(0 10%, 100% 0, 100% 85%, 0 100%);
+        padding: 4rem 0;
+    }
 }
 
 .carousel-track {
-    margin-top: 30px;
     display: flex;
-    gap: 2rem;
     position: relative;
-    animation: carousel 20s linear infinite;
     width: max-content;
+
+    @media (max-width: 425px) {
+        margin-top: 10px;
+        gap: 1rem;
+        padding: 0 1rem;
+        animation: carousel 20s linear infinite;
+    }
+
+    @media (min-width: 426px) {
+        margin-top: 30px;
+        gap: 2rem;
+        animation: carousel 20s linear infinite;
+    }
 }
 
 .carousel-card {
-    min-width: 260px;
-    min-height: 320px;
-    @media (min-width: 640px) {
+    @media (max-width: 425px) {
+        min-width: 280px;
+        min-height: 220px;
+        margin-right: 1rem;
+    }
+
+    @media (min-width: 426px) {
         min-width: 320px;
         min-height: 380px;
     }
     flex-shrink: 0;
+}
+
+/* Hide scrollbar but keep functionality */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 @keyframes carousel {
