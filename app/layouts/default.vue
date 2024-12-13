@@ -1,12 +1,11 @@
 <template>
-    <div>
-      <BaseNavigation />
-      <slot />
+    <div class="font-montserrat text-dire-wolf">
+        <NavigationBar />
+        <slot />
+        <FooterBar />
     </div>
-  </template>
-  
-  <script>
-  export default {
-  
-  }
-  </script>
+</template>
+
+<script setup lang="ts">
+
+</script>
